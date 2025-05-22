@@ -37,3 +37,12 @@ function setScorePrompt(team) {
     alert("Giriş iptal edildi veya geçersiz bir değer girildi.");
   }
 }
+
+function setNamePrompt(team) {
+  const name = prompt("Takımın adını giriniz:");
+  if (name !== null && name.trim() !== "") {
+    document.querySelector(`#team${team} h2`).innerText = name;
+  } else {
+    alert("Giriş iptal edildi veya geçersiz bir değer girildi.");
+  }
+}
