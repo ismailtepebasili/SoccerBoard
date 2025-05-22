@@ -1,17 +1,36 @@
-
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url("./assets/soccerBG.jpg");
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
+  background-image: url("./assets/soccerBG.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
+.team {
+  background-color: rgba(18, 177, 9, 0.8);
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 
+#scoreA,
+#scoreB {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
 
+.team-nameA,
+.team-nameB {
+  color: white;
+}
 
+.icon {
+  color: rgb(24, 22, 22);
+}

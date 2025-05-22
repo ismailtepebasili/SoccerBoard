@@ -9,36 +9,69 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <div class="row align-items-center justify-content-center text-center mt-5">
+      <div
+        class="row align-items-center justify-content-center text-center mt-5"
+      >
         <!-- Takım A -->
-      <div class="col-6 mt-5 team" id="teamA">
-        <h2>Takım A</h2>
-        <p id="scoreA">0</p>
-        <div class="score-controls">
-          <button onclick="IncreaseScore('A')">+</button>
-          <button onclick="decreaseScore('A')">-</button>
+        <div class="team col-3 mt-5 mx-1 py-5" id="teamA">
+          <i class="icon fa-solid fa-house fs-3"></i>
+          <h2 class="team-nameA">Takım A</h2>
+          <p id="scoreA">0</p>
+          <div class="score-controls">
+            <button
+              type="button"
+              class="btn btn-success"
+              onclick="IncreaseScore('A')"
+            >
+              +
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              onclick="decreaseScore('A')"
+            >
+              -
+            </button>
+          </div>
+          <div class="outher-controls d-flex justify-content-center gap-2 mt-3">
+            <button type="button" class="btn btn-outline-warning px-3" onclick="setScorePrompt('A')">Skor Ayarla</button>
+            <button type="button" class="btn btn-outline-primary px-3" onclick="setNamePrompt('A')">İsim Ayarla</button>
+            <button type="button" class="btn btn-outline-danger px-3" id="resetButtonA">Reset</button>
+          </div>
         </div>
-        <button onclick="setScorePrompt('A')">Skor Ayarla</button>
-        <button onclick="setNamePrompt('A')">İsim Ayarla</button>
-        <button id="resetButtonA">Reset</button>
-      </div>
-      <!-- Takım B -->
-      <div class="col-6 mt-5 team" id="teamB">
-        <h2>Takım B</h2>
-        <p id="scoreB">0</p>
-        <div class="score-controls">
-          <button onclick="IncreaseScore('B')">+</button>
-          <button onclick="decreaseScore('B')">-</button>
+        <!-- Takım B -->
+        <div class="team col-3 mt-5 mx-2 py-5" id="teamB">
+          <i class="icon fa-solid fa-futbol fs-3"></i>
+          <h2 class="team-nameB">Takım B</h2>
+          <p id="scoreB">0</p>
+          <div class="score-controls">
+            <button
+              type="button"
+              class="btn btn-success"
+              onclick="IncreaseScore('B')"
+            >
+              +
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              onclick="decreaseScore('B')"
+            >
+              -
+            </button>
+          </div>
+          <div class="outher-controls d-flex justify-content-center gap-2 mt-3">
+            <button type="button" class="btn btn-outline-warning px-3" onclick="setScorePrompt('B')">Skor Ayarla</button>
+            <button type="button" class="btn btn-outline-primary px-3" onclick="setNamePrompt('B')">İsim Ayarla</button>
+            <button type="button" class="btn btn-outline-danger px-3" id="resetButtonB">Reset</button>
+          </div>
         </div>
-        <button onclick="setScorePrompt('B')">Skor Ayarla</button>
-        <button onclick="setNamePrompt('B')">İsim Ayarla</button>
-        <button id="resetButtonB">Reset</button>
-      </div>
       </div>
     </div>
     <script src="script.js"></script>
